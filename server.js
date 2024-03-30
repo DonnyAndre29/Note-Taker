@@ -18,7 +18,7 @@ app.use(api_routes)
 
 
 // Start listening on the port
-app.listen(port, () => {
+app.listen(PORT, () => {
   // Log a message to the console
   console.log(`Server is running on http://localhost:${PORT}`);
 });

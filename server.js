@@ -7,7 +7,7 @@ const api_routes = require('./routes/api-routes')
 const app = express();
 
 // Define a port number
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Express middleware
 app.use(express.urlencoded({ extended: false }));
@@ -20,5 +20,5 @@ app.use(api_routes)
 // Start listening on the port
 app.listen(port, () => {
   // Log a message to the console
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
